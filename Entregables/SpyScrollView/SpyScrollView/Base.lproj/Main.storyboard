@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpyScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGA-lg-AyK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clave" translatesAutoresizingMaskIntoConstraints="NO" id="BIq-mv-bRg">
+                                        <rect key="frame" x="0.0" y="0.0" width="1927" height="2400"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BIq-mv-bRg" firstAttribute="top" secondItem="qGA-lg-AyK" secondAttribute="top" id="F6d-KS-ceA"/>
+                                    <constraint firstAttribute="bottom" secondItem="BIq-mv-bRg" secondAttribute="bottom" id="UNw-Tq-64y"/>
+                                    <constraint firstItem="BIq-mv-bRg" firstAttribute="leading" secondItem="qGA-lg-AyK" secondAttribute="leading" id="bCt-S0-M2p"/>
+                                    <constraint firstAttribute="trailing" secondItem="BIq-mv-bRg" secondAttribute="trailing" id="uRg-au-Jy6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qGA-lg-AyK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P5X-iY-0Ou"/>
+                            <constraint firstItem="qGA-lg-AyK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="adg-RS-jea"/>
+                            <constraint firstItem="qGA-lg-AyK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ps7-EV-kwE"/>
+                            <constraint firstItem="qGA-lg-AyK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qp6-Q7-KHN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="BIq-mv-bRg" id="hA2-cH-7W3"/>
+                        <outlet property="scrollView" destination="qGA-lg-AyK" id="MRG-4W-9qM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clave" width="1927" height="2400"/>
+    </resources>
+</document>
