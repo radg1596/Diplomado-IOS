@@ -1,0 +1,8 @@
+El servidor proporcionado por el libro no funcionó de manera correcta.
+Debido a eso, use uno alterno escrito en Python (No es de mi autoría, alguien
+con el mismo problema lo publicó).
+Con la terminal, entrar a OpenRestaurant
+Contents
+MacOS
+y escribir python "servidor.py"
+Con eso el servidor estará corriendo y se puede probar la app
