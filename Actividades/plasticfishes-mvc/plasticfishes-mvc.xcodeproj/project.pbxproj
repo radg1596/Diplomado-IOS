@@ -11,6 +11,8 @@
 		1E45F8F12155ABD20049CA80 /* FishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E45F8EF2155ABD20049CA80 /* FishViewController.xib */; };
 		1E45F8F42155AEA70049CA80 /* FishesViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45F8F22155AEA70049CA80 /* FishesViewCellTableViewCell.swift */; };
 		1E45F8F52155AEA70049CA80 /* FishesViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E45F8F32155AEA70049CA80 /* FishesViewCellTableViewCell.xib */; };
+		1E45F8F72155C2B80049CA80 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E45F8F62155C2B80049CA80 /* Storyboard.storyboard */; };
+		1E45F8F92155C4250049CA80 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45F8F82155C4250049CA80 /* detailViewController.swift */; };
 		1E92B987214C6CC500CB5210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92B986214C6CC500CB5210 /* AppDelegate.swift */; };
 		1E92B990214C6CC700CB5210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E92B98F214C6CC700CB5210 /* Assets.xcassets */; };
 		1E92B993214C6CC700CB5210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E92B991214C6CC700CB5210 /* LaunchScreen.storyboard */; };
@@ -35,6 +37,8 @@
 		1E45F8EF2155ABD20049CA80 /* FishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FishViewController.xib; sourceTree = "<group>"; };
 		1E45F8F22155AEA70049CA80 /* FishesViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesViewCellTableViewCell.swift; sourceTree = "<group>"; };
 		1E45F8F32155AEA70049CA80 /* FishesViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FishesViewCellTableViewCell.xib; sourceTree = "<group>"; };
+		1E45F8F62155C2B80049CA80 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		1E45F8F82155C4250049CA80 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		1E92B983214C6CC500CB5210 /* plasticfishes-mvc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plasticfishes-mvc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E92B986214C6CC500CB5210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E92B98F214C6CC700CB5210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 		1E92B985214C6CC500CB5210 /* plasticfishes-mvc */ = {
 			isa = PBXGroup;
 			children = (
+				1E45F8F62155C2B80049CA80 /* Storyboard.storyboard */,
+				1E45F8F82155C4250049CA80 /* detailViewController.swift */,
 				1E45F8ED2155ABB30049CA80 /* Controllers */,
 				1ECB9D24214C879300C71A89 /* services */,
 				1ECB9D1F214C830300C71A89 /* Network */,
@@ -236,6 +242,7 @@
 				1E92B993214C6CC700CB5210 /* LaunchScreen.storyboard in Resources */,
 				1E45F8F12155ABD20049CA80 /* FishViewController.xib in Resources */,
 				1E92B990214C6CC700CB5210 /* Assets.xcassets in Resources */,
+				1E45F8F72155C2B80049CA80 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +265,7 @@
 				1E45F8F42155AEA70049CA80 /* FishesViewCellTableViewCell.swift in Sources */,
 				1E92B987214C6CC500CB5210 /* AppDelegate.swift in Sources */,
 				1E45F8F02155ABD20049CA80 /* FishViewController.swift in Sources */,
+				1E45F8F92155C4250049CA80 /* detailViewController.swift in Sources */,
 				1ECB9D26214C881500C71A89 /* FishService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

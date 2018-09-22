@@ -55,12 +55,25 @@ class FishViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.fishTitleLabel.text = fish.name
         cell.fishSubtitleLabel.text = fish.text
+        cell.imageView?.image = #imageLiteral(resourceName: "fish")
+        
+        cell.accessoryType = .disclosureIndicator
+        
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 94.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard = UIStoryboard(name: "Storyboard", bundle: Bundle.main)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "detailStoryBoard")
+        
+        navigationController?.pushViewController(viewController, animated: true)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
