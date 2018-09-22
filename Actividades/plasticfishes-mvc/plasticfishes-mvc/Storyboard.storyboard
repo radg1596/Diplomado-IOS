@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vw3-OZ-4yX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish" translatesAutoresizingMaskIntoConstraints="NO" id="Vw3-OZ-4yX">
                                 <rect key="frame" x="75" y="93" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="1dm-ed-1iA"/>
@@ -51,4 +51,7 @@
             <point key="canvasLocation" x="-223.19999999999999" y="-28.335832083958024"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fish" width="40" height="40"/>
+    </resources>
 </document>

@@ -20,20 +20,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MhR-UL-u58">
-                        <rect key="frame" x="5" y="11" width="48.5" height="48"/>
+                        <rect key="frame" x="5" y="11" width="80" height="80"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="48" id="F7B-90-3bw"/>
-                            <constraint firstAttribute="width" constant="48" id="JF1-Nw-INn"/>
+                            <constraint firstAttribute="height" constant="80" id="F7B-90-3bw"/>
+                            <constraint firstAttribute="width" constant="80" id="JF1-Nw-INn"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sx-te-TdO">
-                        <rect key="frame" x="92.5" y="43" width="279.5" height="17"/>
+                        <rect key="frame" x="124" y="43" width="248" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spc-1J-tc7">
-                        <rect key="frame" x="92.5" y="18" width="279.5" height="21"/>
+                        <rect key="frame" x="124" y="18" width="248" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>

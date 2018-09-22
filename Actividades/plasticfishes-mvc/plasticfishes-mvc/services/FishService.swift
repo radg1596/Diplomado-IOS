@@ -9,7 +9,12 @@
 import Foundation
 
 struct FishService {
-    static func list_all() -> [Fish] {
+    static let shared = FishService()
+    
+    let client = Client(baseURLComponents: URLComponents(string:"https://plasticfishes.herokuapp.com/")!)
+    let jsonDecoder = JSONDecoder()
+    
+    func all() -> [Fish] {
         let decoder = JSONDecoder()
         do {
             return try decoder.decode([Fish].self, from: DataSource().fishes)
@@ -17,6 +22,14 @@ struct FishService {
         catch {
             //Notify the user or a third party error catcher
             return []
+        }
+    }
+    
+    func all(_ completion: @escaping ([Fish]) -> Void) {
+        client.get(path: "/api/fishes") { (data) in
+            guard let jsonData = data else { return }
+            let result = try? self.jsonDecoder.decode([Fish].self, from: jsonData)
+            completion(result ?? [Fish]())
         }
     }
 }

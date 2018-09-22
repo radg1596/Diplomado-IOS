@@ -13,7 +13,11 @@ class FishViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var fishesTableView: UITableView!
     
-    var fishesArray = [Fish]()
+    var fishesArray: [Fish]? {
+        didSet{
+            self.fishesTableView.reloadData()
+        }
+    }
     
     //MARK: View Methods
     
@@ -40,23 +44,30 @@ class FishViewController: UIViewController, UITableViewDelegate, UITableViewData
         //TODO
         //ServiceAPICALL
         //self.fishesArray = fishes
-        fishesArray = FishService.list_all()
+        //fishesArray = FishService.list_all()
+        FishService.shared.all { (fishes) in
+            debugPrint(fishes)
+            self.fishesArray = fishes
+            
+        }
     }
     
     //MARK: Table view Protocols Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fishesArray.count
+        return fishesArray?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "fishCell", for: indexPath) as? FishesViewCellTableViewCell else {return UITableViewCell()}
         
-        let fish = fishesArray[indexPath.row]
+        let fish = fishesArray?[indexPath.row]
         
-        cell.fishTitleLabel.text = fish.name
-        cell.fishSubtitleLabel.text = fish.text
-        cell.imageView?.image = #imageLiteral(resourceName: "fish")
-        
+        cell.fishTitleLabel.text = fish?.name
+        cell.fishSubtitleLabel.text = fish?.text
+
+        if let data = fish?.imageData {
+            cell.imageView?.image = UIImage(data: data)
+        }
         cell.accessoryType = .disclosureIndicator
         
         

@@ -12,7 +12,7 @@ class detailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Fish"
         // Do any additional setup after loading the view.
     }
 
