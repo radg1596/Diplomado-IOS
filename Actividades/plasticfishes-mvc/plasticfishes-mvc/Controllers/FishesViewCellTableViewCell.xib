@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fishCell" rowHeight="94" id="KGk-i7-Jjw" customClass="FishesViewCellTableViewCell" customModule="plasticfishes_mvc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MhR-UL-u58">
+                        <rect key="frame" x="5" y="11" width="48.5" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="F7B-90-3bw"/>
+                            <constraint firstAttribute="width" constant="48" id="JF1-Nw-INn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sx-te-TdO">
+                        <rect key="frame" x="92.5" y="43" width="279.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spc-1J-tc7">
+                        <rect key="frame" x="92.5" y="18" width="279.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MhR-UL-u58" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="17c-4K-fh2"/>
+                    <constraint firstItem="spc-1J-tc7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="3FG-R3-jYj"/>
+                    <constraint firstItem="0sx-te-TdO" firstAttribute="leading" secondItem="MhR-UL-u58" secondAttribute="trailing" constant="39" id="9be-Ow-1h1"/>
+                    <constraint firstItem="MhR-UL-u58" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="GGC-Df-m55"/>
+                    <constraint firstAttribute="trailing" secondItem="0sx-te-TdO" secondAttribute="trailing" constant="22" id="NL3-ti-m7O"/>
+                    <constraint firstItem="spc-1J-tc7" firstAttribute="leading" secondItem="MhR-UL-u58" secondAttribute="trailing" constant="39" id="NSH-hL-lUg"/>
+                    <constraint firstAttribute="trailing" secondItem="spc-1J-tc7" secondAttribute="trailing" constant="22" id="NUW-JF-xz9"/>
+                    <constraint firstAttribute="bottom" secondItem="0sx-te-TdO" secondAttribute="bottom" constant="33.5" id="jIc-xR-FzS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fishImageView" destination="MhR-UL-u58" id="faN-sS-Wid"/>
+                <outlet property="fishSubtitleLabel" destination="0sx-te-TdO" id="fud-Oy-wHj"/>
+                <outlet property="fishTitleLabel" destination="spc-1J-tc7" id="brY-ca-Snl"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="86"/>
+        </tableViewCell>
+    </objects>
+</document>

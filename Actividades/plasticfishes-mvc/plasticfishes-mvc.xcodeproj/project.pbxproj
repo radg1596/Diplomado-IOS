@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E45F8F02155ABD20049CA80 /* FishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45F8EE2155ABD20049CA80 /* FishViewController.swift */; };
+		1E45F8F12155ABD20049CA80 /* FishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E45F8EF2155ABD20049CA80 /* FishViewController.xib */; };
+		1E45F8F42155AEA70049CA80 /* FishesViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45F8F22155AEA70049CA80 /* FishesViewCellTableViewCell.swift */; };
+		1E45F8F52155AEA70049CA80 /* FishesViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E45F8F32155AEA70049CA80 /* FishesViewCellTableViewCell.xib */; };
 		1E92B987214C6CC500CB5210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92B986214C6CC500CB5210 /* AppDelegate.swift */; };
-		1E92B989214C6CC500CB5210 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92B988214C6CC500CB5210 /* MasterViewController.swift */; };
-		1E92B98B214C6CC500CB5210 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92B98A214C6CC500CB5210 /* DetailViewController.swift */; };
-		1E92B98E214C6CC500CB5210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E92B98C214C6CC500CB5210 /* Main.storyboard */; };
 		1E92B990214C6CC700CB5210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E92B98F214C6CC700CB5210 /* Assets.xcassets */; };
 		1E92B993214C6CC700CB5210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E92B991214C6CC700CB5210 /* LaunchScreen.storyboard */; };
 		1E92B99E214C6CC700CB5210 /* plasticfishes_mvcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92B99D214C6CC700CB5210 /* plasticfishes_mvcTests.swift */; };
@@ -30,11 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E45F8EE2155ABD20049CA80 /* FishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishViewController.swift; sourceTree = "<group>"; };
+		1E45F8EF2155ABD20049CA80 /* FishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FishViewController.xib; sourceTree = "<group>"; };
+		1E45F8F22155AEA70049CA80 /* FishesViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		1E45F8F32155AEA70049CA80 /* FishesViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FishesViewCellTableViewCell.xib; sourceTree = "<group>"; };
 		1E92B983214C6CC500CB5210 /* plasticfishes-mvc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plasticfishes-mvc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E92B986214C6CC500CB5210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E92B988214C6CC500CB5210 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		1E92B98A214C6CC500CB5210 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		1E92B98D214C6CC500CB5210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E92B98F214C6CC700CB5210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E92B992214C6CC700CB5210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E92B994214C6CC700CB5210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +66,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E45F8ED2155ABB30049CA80 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E45F8EE2155ABD20049CA80 /* FishViewController.swift */,
+				1E45F8EF2155ABD20049CA80 /* FishViewController.xib */,
+				1E45F8F22155AEA70049CA80 /* FishesViewCellTableViewCell.swift */,
+				1E45F8F32155AEA70049CA80 /* FishesViewCellTableViewCell.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		1E92B97A214C6CC500CB5210 = {
 			isa = PBXGroup;
 			children = (
@@ -85,13 +98,12 @@
 		1E92B985214C6CC500CB5210 /* plasticfishes-mvc */ = {
 			isa = PBXGroup;
 			children = (
+				1E45F8ED2155ABB30049CA80 /* Controllers */,
 				1ECB9D24214C879300C71A89 /* services */,
 				1ECB9D1F214C830300C71A89 /* Network */,
 				1E92B9A8214C70FE00CB5210 /* Models */,
-				1E92B9A9214C712800CB5210 /* Controllers */,
 				1E92B9AA214C713100CB5210 /* Views */,
 				1E92B986214C6CC500CB5210 /* AppDelegate.swift */,
-				1E92B98C214C6CC500CB5210 /* Main.storyboard */,
 				1E92B98F214C6CC700CB5210 /* Assets.xcassets */,
 				1E92B991214C6CC700CB5210 /* LaunchScreen.storyboard */,
 				1E92B994214C6CC700CB5210 /* Info.plist */,
@@ -114,15 +126,6 @@
 				1ECB9D22214C841D00C71A89 /* Fish.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		1E92B9A9214C712800CB5210 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				1E92B98A214C6CC500CB5210 /* DetailViewController.swift */,
-				1E92B988214C6CC500CB5210 /* MasterViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		1E92B9AA214C713100CB5210 /* Views */ = {
@@ -229,9 +232,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E45F8F52155AEA70049CA80 /* FishesViewCellTableViewCell.xib in Resources */,
 				1E92B993214C6CC700CB5210 /* LaunchScreen.storyboard in Resources */,
+				1E45F8F12155ABD20049CA80 /* FishViewController.xib in Resources */,
 				1E92B990214C6CC700CB5210 /* Assets.xcassets in Resources */,
-				1E92B98E214C6CC500CB5210 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,10 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ECB9D23214C841D00C71A89 /* Fish.swift in Sources */,
-				1E92B98B214C6CC500CB5210 /* DetailViewController.swift in Sources */,
-				1E92B989214C6CC500CB5210 /* MasterViewController.swift in Sources */,
 				1ECB9D21214C831F00C71A89 /* dataSource.swift in Sources */,
+				1E45F8F42155AEA70049CA80 /* FishesViewCellTableViewCell.swift in Sources */,
 				1E92B987214C6CC500CB5210 /* AppDelegate.swift in Sources */,
+				1E45F8F02155ABD20049CA80 /* FishViewController.swift in Sources */,
 				1ECB9D26214C881500C71A89 /* FishService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,14 +281,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1E92B98C214C6CC500CB5210 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E92B98D214C6CC500CB5210 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1E92B991214C6CC700CB5210 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
