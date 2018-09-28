@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class FishViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -59,18 +61,14 @@ class FishViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "fishCell", for: indexPath) as? FishesViewCellTableViewCell else {return UITableViewCell()}
+        guard let fish = fishesArray?[indexPath.row] else {return cell}
         
-        let fish = fishesArray?[indexPath.row]
-        
-        cell.fishTitleLabel.text = fish?.name
-        cell.fishSubtitleLabel.text = fish?.text
+        cell.fishTitleLabel.text = fish.name
+        cell.fishSubtitleLabel.text = fish.text
 
-        if let data = fish?.imageData {
-            cell.imageView?.image = UIImage(data: data)
-        }
+        //Utilizando el pod KingFisher
+        cell.fishImageView.kf.setImage(with: fish.imageURL)
         cell.accessoryType = .disclosureIndicator
-        
-        
         return cell
     }
     
