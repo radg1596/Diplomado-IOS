@@ -21,6 +21,8 @@
 		1ECB9D23214C841D00C71A89 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB9D22214C841D00C71A89 /* Fish.swift */; };
 		1ECB9D26214C881500C71A89 /* FishService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB9D25214C881500C71A89 /* FishService.swift */; };
 		1EE4FAFF2156902F0052D057 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4FAFE2156902F0052D057 /* Client.swift */; };
+		8735B3DEAC3F03DECFB840B4 /* Pods_plasticfishes_mvcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896343EB3F89E11725D7607D /* Pods_plasticfishes_mvcTests.framework */; };
+		94C653484F6AB29CBE1EF76A /* Pods_plasticfishes_mvc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882ECF363275252FEB32E6AC /* Pods_plasticfishes_mvc.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1708576E49D2E2CE2476AF09 /* Pods-plasticfishes-mvcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plasticfishes-mvcTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-plasticfishes-mvcTests/Pods-plasticfishes-mvcTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CB33061B6AFF1932B5463D9 /* Pods-plasticfishes-mvc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plasticfishes-mvc.release.xcconfig"; path = "Pods/Target Support Files/Pods-plasticfishes-mvc/Pods-plasticfishes-mvc.release.xcconfig"; sourceTree = "<group>"; };
 		1E45F8EE2155ABD20049CA80 /* FishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishViewController.swift; sourceTree = "<group>"; };
 		1E45F8EF2155ABD20049CA80 /* FishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FishViewController.xib; sourceTree = "<group>"; };
 		1E45F8F22155AEA70049CA80 /* FishesViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesViewCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -52,6 +56,10 @@
 		1ECB9D22214C841D00C71A89 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
 		1ECB9D25214C881500C71A89 /* FishService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishService.swift; sourceTree = "<group>"; };
 		1EE4FAFE2156902F0052D057 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		53C0ABF4AB0BA9B498578849 /* Pods-plasticfishes-mvcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plasticfishes-mvcTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-plasticfishes-mvcTests/Pods-plasticfishes-mvcTests.release.xcconfig"; sourceTree = "<group>"; };
+		882ECF363275252FEB32E6AC /* Pods_plasticfishes_mvc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plasticfishes_mvc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		896343EB3F89E11725D7607D /* Pods_plasticfishes_mvcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plasticfishes_mvcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C5F293426C987ECF964C1C /* Pods-plasticfishes-mvc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plasticfishes-mvc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-plasticfishes-mvc/Pods-plasticfishes-mvc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C653484F6AB29CBE1EF76A /* Pods_plasticfishes_mvc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8735B3DEAC3F03DECFB840B4 /* Pods_plasticfishes_mvcTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +99,8 @@
 				1E92B985214C6CC500CB5210 /* plasticfishes-mvc */,
 				1E92B99C214C6CC700CB5210 /* plasticfishes-mvcTests */,
 				1E92B984214C6CC500CB5210 /* Products */,
+				BC3F22078BB84BE201E65F94 /* Pods */,
+				9D67E66918D456754E7B3581 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +172,26 @@
 			path = services;
 			sourceTree = "<group>";
 		};
+		9D67E66918D456754E7B3581 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				882ECF363275252FEB32E6AC /* Pods_plasticfishes_mvc.framework */,
+				896343EB3F89E11725D7607D /* Pods_plasticfishes_mvcTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3F22078BB84BE201E65F94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99C5F293426C987ECF964C1C /* Pods-plasticfishes-mvc.debug.xcconfig */,
+				1CB33061B6AFF1932B5463D9 /* Pods-plasticfishes-mvc.release.xcconfig */,
+				1708576E49D2E2CE2476AF09 /* Pods-plasticfishes-mvcTests.debug.xcconfig */,
+				53C0ABF4AB0BA9B498578849 /* Pods-plasticfishes-mvcTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E92B9A2214C6CC700CB5210 /* Build configuration list for PBXNativeTarget "plasticfishes-mvc" */;
 			buildPhases = (
+				CEF80F07865E24F570081930 /* [CP] Check Pods Manifest.lock */,
 				1E92B97F214C6CC500CB5210 /* Sources */,
 				1E92B980214C6CC500CB5210 /* Frameworks */,
 				1E92B981214C6CC500CB5210 /* Resources */,
+				925B6EB05A5FF755FD084D37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E92B9A5214C6CC700CB5210 /* Build configuration list for PBXNativeTarget "plasticfishes-mvcTests" */;
 			buildPhases = (
+				ACDEEC06FE67C176771128D5 /* [CP] Check Pods Manifest.lock */,
 				1E92B995214C6CC700CB5210 /* Sources */,
 				1E92B996214C6CC700CB5210 /* Frameworks */,
 				1E92B997214C6CC700CB5210 /* Resources */,
@@ -257,6 +292,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		925B6EB05A5FF755FD084D37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-plasticfishes-mvc/Pods-plasticfishes-mvc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-plasticfishes-mvc/Pods-plasticfishes-mvc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACDEEC06FE67C176771128D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plasticfishes-mvcTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEF80F07865E24F570081930 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plasticfishes-mvc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E92B97F214C6CC500CB5210 /* Sources */ = {
@@ -420,6 +524,7 @@
 		};
 		1E92B9A3214C6CC700CB5210 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C5F293426C987ECF964C1C /* Pods-plasticfishes-mvc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +542,7 @@
 		};
 		1E92B9A4214C6CC700CB5210 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB33061B6AFF1932B5463D9 /* Pods-plasticfishes-mvc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +560,7 @@
 		};
 		1E92B9A6214C6CC700CB5210 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1708576E49D2E2CE2476AF09 /* Pods-plasticfishes-mvcTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -474,6 +581,7 @@
 		};
 		1E92B9A7214C6CC700CB5210 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C0ABF4AB0BA9B498578849 /* Pods-plasticfishes-mvcTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
