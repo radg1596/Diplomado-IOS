@@ -1,0 +1,6 @@
+framework module Pods_plasticfishes_mvcTests {
+  umbrella header "Pods-plasticfishes-mvcTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
