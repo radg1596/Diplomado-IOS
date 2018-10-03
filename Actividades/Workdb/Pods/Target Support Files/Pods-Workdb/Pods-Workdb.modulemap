@@ -1,0 +1,6 @@
+framework module Pods_Workdb {
+  umbrella header "Pods-Workdb-umbrella.h"
+
+  export *
+  module * { export * }
+}

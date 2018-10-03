@@ -6,7 +6,7 @@ target 'Workdb' do
   use_frameworks!
 
   # Pods for Workdb
-
+  pod 'SAMKeychain'
   target 'WorkdbTests' do
     inherit! :search_paths
     # Pods for testing

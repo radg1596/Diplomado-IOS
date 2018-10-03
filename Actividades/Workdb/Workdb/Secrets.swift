@@ -7,19 +7,39 @@
 //
 
 import Foundation
+import SAMKeychain
 
 enum Secrets {
     
-    static let apiService = "worldb.herokuapp.com"
+    static let apiService = "com.herokuapp.worldb"
     case auToken
+    case userToken (key: String)
     
-    var value: String {
+    var value: String? {
         switch self {
         case .auToken:
-            return ""//SANKeychain.password(forService: Secretes. apiService, account: Secrets.apiService)
+            return SAMKeychain.password(forService: Secrets.apiService, account: "api")
+        case .userToken(key: let key):
+            return SAMKeychain.password(forService: Secrets.apiService, account: key)
+
         }
     }
     
-    func set(value: String) {
+    func set(_ value: String) -> Bool {
+        switch self {
+        case .auToken:
+            return SAMKeychain.setPassword(value, forService: Secrets.apiService, account: "api")
+        case .userToken(key: let key):
+            return SAMKeychain.setPassword(value, forService: Secrets.apiService, account: key)
+        }
+    }
+    
+    func delete() -> Bool {
+        switch self {
+        case .auToken:
+            return SAMKeychain.deletePassword(forService: Secrets.apiService, account: "api")
+        case .userToken(key: let key):
+            return SAMKeychain.deletePassword(forService: Secrets.apiService, account: key)
+        }
     }
 }
