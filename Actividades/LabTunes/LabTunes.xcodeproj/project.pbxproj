@@ -19,6 +19,7 @@
 		1E8D46A52196584400CB47A2 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8D46A42196584400CB47A2 /* Music.swift */; };
 		1E8D46A72196585A00CB47A2 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8D46A62196585A00CB47A2 /* Song.swift */; };
 		1E8D46A921966BA700CB47A2 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8D46A821966BA700CB47A2 /* NetworkTests.swift */; };
+		1EAB9C94219730FE0078C510 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAB9C93219730FE0078C510 /* MusicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		1E8D46A42196584400CB47A2 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		1E8D46A62196585A00CB47A2 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		1E8D46A821966BA700CB47A2 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		1EAB9C93219730FE0078C510 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +109,9 @@
 		1E8D46702196578200CB47A2 /* LabTunes */ = {
 			isa = PBXGroup;
 			children = (
+				1EAB9C92219730E60078C510 /* Controllers */,
 				1E8D469F2196580400CB47A2 /* Models */,
 				1E8D46712196578200CB47A2 /* AppDelegate.swift */,
-				1E8D46732196578200CB47A2 /* ViewController.swift */,
 				1E8D46752196578200CB47A2 /* Main.storyboard */,
 				1E8D46782196578300CB47A2 /* Assets.xcassets */,
 				1E8D467A2196578300CB47A2 /* LaunchScreen.storyboard */,
@@ -146,6 +148,15 @@
 				1E8D46A62196585A00CB47A2 /* Song.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1EAB9C92219730E60078C510 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1EAB9C93219730FE0078C510 /* MusicViewController.swift */,
+				1E8D46732196578200CB47A2 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8D46A72196585A00CB47A2 /* Song.swift in Sources */,
+				1EAB9C94219730FE0078C510 /* MusicViewController.swift in Sources */,
 				1E8D46A32196583600CB47A2 /* Session.swift in Sources */,
 				1E8D46742196578200CB47A2 /* ViewController.swift in Sources */,
 				1E8D46A52196584400CB47A2 /* Music.swift in Sources */,
@@ -391,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -446,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

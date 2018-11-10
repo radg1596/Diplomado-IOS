@@ -10,8 +10,8 @@ import Foundation
 
 class User {
     
-    static let useName = "iOSLab"
-    static let password = "verysecurepassword"
+    static let useName = "username"
+    static let password = "password"
     static let session = Session.sharedInstance
     static func login(userName: String, password: String) -> Bool {
         if self.useName == userName {

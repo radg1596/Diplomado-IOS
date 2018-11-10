@@ -16,13 +16,9 @@ class LabTunesTests: XCTestCase {
         session.token = nil
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
     
     func testCorrectLogin() {
-        XCTAssertTrue(User.login(userName: "iOSLab", password: "verysecurepassword"))
+        XCTAssertTrue(User.login(userName: "username", password: "password"))
     }
     
     func testWrongLogin() {
@@ -31,7 +27,7 @@ class LabTunesTests: XCTestCase {
     
     func testSaveSession() {
         let session = Session.sharedInstance
-        let _ = User.login(userName: "iOSLab", password: "223")
+        let _ = User.login(userName: "username", password: "password")
         XCTAssertNotNil(session.token)
     }
     
@@ -42,7 +38,7 @@ class LabTunesTests: XCTestCase {
     }
     
     func testExpectedToken() {
-        let _ = User.login(userName: "iOSLab", password: "223")
+        let _ = User.login(userName: "username", password: "password")
         let session = Session.sharedInstance
         XCTAssertEqual(session.token!, "1234567890", "Token should match")
         XCTAssertNotEqual(session.token!, "23323223", "Token is wrong")
@@ -53,7 +49,7 @@ class LabTunesTests: XCTestCase {
     }
     
     func testRightFetchSongs() {
-        let _ = User.login(userName: "iOSLab", password: "verysecurepassword")
+        let _ = User.login(userName: "username", password: "password")
         XCTAssertNoThrow(try User.fetchSongs())
     }
 }

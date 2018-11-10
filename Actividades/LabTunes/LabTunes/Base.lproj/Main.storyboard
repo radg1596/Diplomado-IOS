@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eOe-v0-qsW">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,119 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LabTunes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7M-6B-AUH">
+                                <rect key="frame" x="20" y="84" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="usernametextfield"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsm-EP-mBJ">
+                                <rect key="frame" x="20" y="134" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="passwordtextfield"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03d-4a-ZSO">
+                                <rect key="frame" x="137" y="184" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loginbutton"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginButtonWasTouchInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gwc-xc-c2Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e7M-6B-AUH" secondAttribute="trailing" constant="20" id="35V-A4-Hte"/>
+                            <constraint firstItem="e7M-6B-AUH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DUe-6u-dM6"/>
+                            <constraint firstItem="nsm-EP-mBJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FW9-NE-xJl"/>
+                            <constraint firstItem="nsm-EP-mBJ" firstAttribute="top" secondItem="e7M-6B-AUH" secondAttribute="bottom" constant="20" id="YfO-NY-TZR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nsm-EP-mBJ" secondAttribute="trailing" constant="20" id="asz-VV-4hc"/>
+                            <constraint firstItem="e7M-6B-AUH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m2W-1v-85k"/>
+                            <constraint firstItem="03d-4a-ZSO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szL-4n-J4k"/>
+                            <constraint firstItem="03d-4a-ZSO" firstAttribute="top" secondItem="nsm-EP-mBJ" secondAttribute="bottom" constant="20" id="ymt-bv-2R4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WLo-AK-pTc"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="nsm-EP-mBJ" id="1g3-g8-LyJ"/>
+                        <outlet property="userNameTextField" destination="e7M-6B-AUH" id="JcL-Wm-qVa"/>
+                        <segue destination="t5F-E6-M7d" kind="show" identifier="loginSuccess" id="Xui-bQ-8zY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Music View Controller-->
+        <scene sceneID="K1v-gL-N7y">
+            <objects>
+                <viewController id="t5F-E6-M7d" customClass="MusicViewController" customModule="LabTunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fsr-gU-3F2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3US-9h-63C">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="musicCell" id="TED-dm-kwp">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TED-dm-kwp" id="QmM-Nd-6cS">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="t5F-E6-M7d" id="nFj-le-ico"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="MusicView"/>
+                        <constraints>
+                            <constraint firstItem="3US-9h-63C" firstAttribute="leading" secondItem="kR4-b8-a6g" secondAttribute="leading" id="E0X-40-qdu"/>
+                            <constraint firstItem="kR4-b8-a6g" firstAttribute="bottom" secondItem="3US-9h-63C" secondAttribute="bottom" id="RMt-V7-xtx"/>
+                            <constraint firstItem="kR4-b8-a6g" firstAttribute="trailing" secondItem="3US-9h-63C" secondAttribute="trailing" id="jq2-ys-705"/>
+                            <constraint firstItem="3US-9h-63C" firstAttribute="top" secondItem="kR4-b8-a6g" secondAttribute="top" id="pS9-mc-fAh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kR4-b8-a6g"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="3US-9h-63C" id="IbJ-pt-IfA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sf9-7B-Sok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LCp-uH-6ng">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eOe-v0-qsW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BsW-k4-5LQ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XrQ-uu-dPr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0km-6v-eO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="134"/>
         </scene>
     </scenes>
 </document>

@@ -16,6 +16,7 @@ class NetworkTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        print("")
         sessionUnderTest = URLSession(configuration: .default)
         
     }
